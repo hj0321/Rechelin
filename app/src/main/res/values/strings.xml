@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Rechelin</string>
+    <string name="title">Rechelin</string>
+    <string name="subtitle">리슐랭, 진짜 리뷰를 찾아서</string>
+    <string name="addresssetting">주소 설정</string>
+    <string name="search">검색해보세요</string>
+    <string name="what_score">의 리뷰점수는?</string>
+    <string name="pos">긍정</string>
+    <string name="neg">부정</string>
+    <string name="what_keyword">이 가게의 리뷰 키워드는?</string>
+</resources>

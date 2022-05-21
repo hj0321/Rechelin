@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/red"
+        android:fontFamily="@font/tmontium"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@id/horired"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/spy_hat"
+        app:layout_constraintBottom_toTopOf="@+id/horired"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/scdream6"
+        android:gravity="top"
+        android:paddingTop="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="80dp"
+        android:text="@string/subtitle"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gright"
+        app:layout_constraintStart_toStartOf="@id/gleft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/addsettingbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream4"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="@string/addresssetting"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/scdream4"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="@string/search"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/gright"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+
+    <ImageButton
+        android:id="@+id/chickenbutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chicken"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/search_button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/chicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/scdream4"
+        android:text="치킨"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/chickenbutton" />
+
+    <ImageButton
+        android:id="@+id/pizzabutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pizza"
+        app:layout_constraintEnd_toStartOf="@+id/chinesebutton"
+        app:layout_constraintStart_toEndOf="@+id/chickenbutton"
+        app:layout_constraintTop_toBottomOf="@+id/search_button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/scdream4"
+        android:text="피자"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintEnd_toEndOf="@id/gright"
+        app:layout_constraintTop_toBottomOf="@+id/pizzabutton" />
+
+    <ImageButton
+        android:id="@+id/chinesebutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chinesefood"
+        app:layout_constraintEnd_toStartOf="@+id/gright"
+        app:layout_constraintTop_toBottomOf="@+id/search_button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/chinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/scdream4"
+        android:text="중식"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/gright"
+        app:layout_constraintTop_toBottomOf="@+id/chinesebutton" />
+
+    <ImageButton
+        android:id="@+id/koreanbutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/koreanfood"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/chickenbutton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/korean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/scdream4"
+        android:text="한식"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/koreanbutton" />
+
+
+    <ImageButton
+        android:id="@+id/japanesebutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sushi"
+        app:layout_constraintEnd_toStartOf="@+id/porkbutton"
+        app:layout_constraintStart_toEndOf="@+id/koreanbutton"
+        app:layout_constraintTop_toBottomOf="@+id/pizzabutton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/japanese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/scdream4"
+        android:text="일식/돈까스"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/japanesebutton"
+        app:layout_constraintEnd_toEndOf="@+id/gright"/>
+
+    <ImageButton
+        android:id="@+id/porkbutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pork"
+        app:layout_constraintEnd_toStartOf="@+id/gright"
+        app:layout_constraintTop_toBottomOf="@+id/chinesebutton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/pork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/scdream4"
+        android:text="족발/보쌈"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/gright"
+        app:layout_constraintTop_toBottomOf="@+id/porkbutton" />
+
+    <ImageButton
+        android:id="@+id/nightbutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/moon"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/koreanbutton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/scdream4"
+        android:text="야식"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/nightbutton" />
+
+    <ImageButton
+        android:id="@+id/snackbutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/snack"
+        app:layout_constraintEnd_toStartOf="@+id/coffeebutton"
+        app:layout_constraintStart_toEndOf="@+id/nightbutton"
+        app:layout_constraintTop_toBottomOf="@+id/japanesebutton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/snack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/scdream4"
+        android:text="분식"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/gleft"
+        app:layout_constraintTop_toBottomOf="@+id/snackbutton"
+        app:layout_constraintEnd_toEndOf="@+id/gright"/>
+
+    <ImageButton
+        android:id="@+id/coffeebutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/coffee"
+        app:layout_constraintEnd_toStartOf="@+id/gright"
+        app:layout_constraintTop_toBottomOf="@+id/porkbutton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="22dp"
+        android:fontFamily="@font/scdream4"
+        android:text="카페/디저트"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/gright"
+        app:layout_constraintTop_toBottomOf="@+id/coffeebutton" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
