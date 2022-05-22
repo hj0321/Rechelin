@@ -61,12 +61,9 @@ class ListActivity : AppCompatActivity() {
 
                 }
             }
-
             val store_name = binding.storeName
             val store_score = binding.storeScore
-
             val root = binding.root
-
         }
     }
 
