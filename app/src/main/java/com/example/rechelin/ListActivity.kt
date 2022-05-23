@@ -26,6 +26,7 @@ class ListActivity : AppCompatActivity() {
         binding.recyclerView.adapter = customAdapter
         // 4. 레이아웃 매니저 설정
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
+
     }
 
     fun loadStore(): MutableList<StoreEntity>{              // 100개의 StoreEntity를 넘겨받도록 해논것..
